@@ -17,9 +17,20 @@ from django.contrib import admin
 from django.urls import path, re_path
 
 from Django_1.common import func1
+from app01 import views1
+from app01 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('add/<str:group_name>/<str:type_name>/', views.add),
+    path('select11/', views.select),
+
+    path('add/<str:name>/', views1.add),
+    path('delete/<int:id>/', views1.delete),
+    path('update/<int:id>/<str:name>/', views1.update),
+    path('select/<int:id>/', views1.select),
     re_path('(.*)/', func1),
+
 ]
 
