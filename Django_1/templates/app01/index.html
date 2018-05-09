@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="wdw" charset="UTF-8">
+    <title>王大为的两个网页</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css">
+    <script src="/static/js/js1.js"></script>
+</head>
+<body>
+<div style="position: fixed;top: 0;left: 0%;"><img style="height: 150px" src="/static/img/django.jpg"></div>
+
+<div style="background: greenyellow;position: fixed;top: 20%;left: 0%;width: 100%;">
+    <h1>welcome</h1>
+    <p>欢迎用户： {{ username }}</p>
+    <p>您的信息如下:</p>
+    <p>密码: {{ password }}</p>
+    <p>地址: {{ address }}</p>
+    <p>电话: {{ phone }}</p>
+    <p>创建时间: {{ create_time|date:"Y-m-d H:i:s" }}</p>
+    <p>更新时间: {{ update_time|date:"Y-m-d H:i:s" }}</p>
+    <p>额外信息: {{ info }}</p>
+
+</div>
+
+</body>
+</html>
