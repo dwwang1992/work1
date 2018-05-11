@@ -29,3 +29,8 @@ def index(request):
         return render_to_response("app01/index.html", ret)
     else:
         return redirect("/login/")
+
+
+def first(request):
+    return render_to_response("app01/first.html")
+
