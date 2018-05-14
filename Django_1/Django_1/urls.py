@@ -26,7 +26,7 @@ urlpatterns = [
     path('first/', views.first),
 
 
-    re_path('(.*)/', func1),
+    # re_path('(.*)/', func1),
 
 ]
 
